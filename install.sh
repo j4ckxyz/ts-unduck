@@ -18,8 +18,11 @@ if ! command -v go &> /dev/null; then
     export PATH=$PATH:/usr/local/go/bin
 fi
 
+echo "Downloading dependencies..."
+GOTOOLCHAIN=auto go mod tidy
+
 echo "Building ts-unduck..."
-go build -o unduck
+GOTOOLCHAIN=auto go build -o unduck
 
 echo "Creating systemd service..."
 sudo tee /etc/systemd/system/unduck.service > /dev/null <<EOF
