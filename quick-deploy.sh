@@ -9,7 +9,7 @@ INSTALL_DIR="$HOME/unduck"
 
 if [ ! -d "$INSTALL_DIR" ]; then
     echo "Cloning ts-unduck..."
-    git clone https://github.com/t3dotgg/ts-unduck.git "$INSTALL_DIR"
+    git clone https://github.com/j4ckxyz/ts-unduck.git "$INSTALL_DIR"
     cd "$INSTALL_DIR"
 else
     echo "Updating ts-unduck..."
