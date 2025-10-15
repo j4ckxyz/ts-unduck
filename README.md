@@ -21,7 +21,7 @@ DuckDuckGo's bang redirects (!gh, !wiki, etc.) are slow because they happen serv
 One-line install on any Linux machine:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/t3dotgg/ts-unduck/main/quick-deploy.sh | bash
+curl -fsSL https://raw.githubusercontent.com/j4ckxyz/ts-unduck/main/quick-deploy.sh | bash
 ```
 
 This will:
